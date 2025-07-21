@@ -12,13 +12,14 @@ permissions:
   contents: read
 
 jobs:
-  name: Pre-clean previous images and containers
-        run: |
-         docker system prune -f
+  
   integration:
     name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
+      - name: Pre-clean previous images and containers
+        run:  docker system prune -f
+        
       - name: Checkout Code
         uses: actions/checkout@v3
 
@@ -29,7 +30,7 @@ jobs:
         run: echo "Running unit tests"
   name: Check disk usage
   run: df -h
-  
+
   build-and-push-ecr-image:
     name: Continuous Delivery
     needs: integration
