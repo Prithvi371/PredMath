@@ -75,6 +75,12 @@ jobs:
     needs: build-and-push-ecr-image
     runs-on: self-hosted
     steps:
+      - name: Max Prune
+        run : |
+          docker system prune -af --volumes
+          rm -rf /usr/local/lib/python3.12/site-packages/__pycache__
+          df -h
+          
       - name: Checkout
         uses: actions/checkout@v3
 
