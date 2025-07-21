@@ -28,14 +28,16 @@ jobs:
 
       - name: Run unit tests
         run: echo "Running unit tests"
-  name: Check disk usage
-  run: df -h
+  
 
   build-and-push-ecr-image:
     name: Continuous Delivery
     needs: integration
     runs-on: ubuntu-latest
     steps:
+      - name: Check disk usage
+        run: df -h
+
       - name: Checkout Code
         uses: actions/checkout@v3
 
