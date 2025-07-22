@@ -1,0 +1,21 @@
+# Ignore Jupyter Notebooks
+notebook/
+**/*.ipynb
+
+# Ignore CSV files in the artifacts folder
+artifacts/
+**/*.csv
+
+# General junk to ignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.DS_Store
+.git
+.gitignore
+.dockerignore
