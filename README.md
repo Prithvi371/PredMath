@@ -6,6 +6,8 @@ This project demonstrates a complete industry-level ML lifecycle—from data ing
 
 ---
 
+<img width="1918" height="929" alt="image" src="https://github.com/user-attachments/assets/77bed204-bf80-4dbf-a5eb-14341f75970f" />
+
 ## 🚀 Tech Stack
 
 - **ML Models**: Linear Regression, Random Forest, XGBoost (GridSearchCV used for tuning)
@@ -54,7 +56,6 @@ pip install -r requirements.txt
 
 # Step 3: Run the Flask app
 python application.py
-
 
 
 <img width="1918" height="929" alt="image" src="https://github.com/user-attachments/assets/77bed204-bf80-4dbf-a5eb-14341f75970f" />
