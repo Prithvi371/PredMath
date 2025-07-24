@@ -21,24 +21,18 @@ This project demonstrates a complete industry-level ML lifecycle—from data ing
 
 ## 📁 Project Structure
 PredMath/
-│ ├── artifacts/
-│ ├── catboost_info/
-│ ├── notebook/data # Jupyter notebook for EDA and data visualizations 
+│
 ├── src/
-│ ├── components/ # Data ingestion, transformation, model trainer
+│ ├── components/ # Data ingestion, transformation, model training
 │ ├── pipeline/ # Training and prediction pipelines
 │ ├── exception.py # Custom exceptions
 │ ├── logger.py # Custom logger
 │ └── utils.py # Utility functions
-├── templates
-├── application.py # Flask app
+│
+├── app.py # Flask app
 ├── Dockerfile # Container config
-├── .dockerignore
-├── .gitignore
 ├── .github/workflows/ # CI/CD GitHub Action YAML
-├── docker-compose.yml
 └── requirements.txt
-├── setup.py
 
 
 ---
