@@ -46,7 +46,7 @@ PredMath/
 
 ```bash
 # Step 1: Clone the repo
-git clone https://github.com/your-username/PredMath.git
+git clone https://github.com/Prithvi371/PredMath.git
 cd PredMath
 
 # Step 2: Create a virtual environment and install dependencies
